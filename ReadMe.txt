@@ -14,8 +14,8 @@ Problems are from online judge & competition
 File names are matched to problem numbers
 
 Q8806.cpp
-	Indicates problem number 8806. 
-	This problem can be accessed with URL [https://www.acmicpc.net/problem/8806]
+	Indicates problem number 2018. 
+	This problem can be accessed with URL [https://www.acmicpc.net/problem/2018]
 
 
 /////////////////////////////////////////////////////////////////////////////
