@@ -1,27 +1,22 @@
 ========================================================================
-    콘솔 응용 프로그램 : [!output PROJECT_NAME] 프로젝트 개요
+    algorithm.git
 ========================================================================
 
-응용 프로그램 마법사에서 이 [!output PROJECT_NAME] 응용 프로그램을 만들었습니다.
+This is for maintaining basic skills of using datastructure and programming
 
-요약 설명이 포함되어 있습니다.
+Problems are from online judge & competition
 
-
-    응용 프로그램 마법사를 사용하여 생성한 VC++ 프로젝트의 기본 프로젝트 파일입니다. 파일을 생성한 Visual C++ 버전에 대한 정보와 응용 프로그램 마법사를 사용하여 선택한 플랫폼, 구성 및 프로젝트 기능에 대한 정보가 포함되어 있습니다.
-
-    응용 프로그램 마법사를 사용하여 생성된 VC++ 프로젝트의 필터 파일입니다. 이 파일에는 프로젝트의 파일과 필터 간의 연결 정보가 들어 있습니다. 이러한 연결은 특정 노드에서 유사한 확장명으로 그룹화된 파일을 표시하기 위해 IDE에서 사용됩니다. 예를 들어 ".cpp" 파일은 "소스 파일" 필터와 연결되어 있습니다.
-
-    기본 응용 프로그램 소스 파일입니다.
+	https://acmicpc.net
 
 /////////////////////////////////////////////////////////////////////////////
-기타 표준 파일:
+File names are matched to problem numbers
 
-StdAfx.h, StdAfx.cpp
-    이 파일은 미리 컴파일된 헤더(PCH) 파일 [!output PROJECT_NAME].pch와 미리 컴파일된 형식(PCT) 파일 StdAfx.obj를 빌드하는 데 사용됩니다.
+Q8806.cpp
+	Indicates problem number 8806. 
+	This problem can be accessed with URL [https://www.acmicpc.net/problem/8806]
 
 /////////////////////////////////////////////////////////////////////////////
-기타 참고:
-
-응용 프로그램 마법사에서 사용하는 "TODO:" 주석은 사용자가 추가하거나 사용자 지정해야 하는 소스 코드 부분을 나타냅니다.
+Notice:
+	I excluded some basic files created by visual studio due to simplicity of listing
 
 /////////////////////////////////////////////////////////////////////////////
