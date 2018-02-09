@@ -12,9 +12,10 @@ Problems are from online judge & competition
 
 
 File names are matched to problem numbers
+Prefix means the source site of the probem
 
-Q8806.cpp
-	Indicates problem number 2018. 
+BJPJ_Q8806.cpp
+	Indicates problem number 2018 in BaekjoonOnlineJudge
 	This problem can be accessed with URL [https://www.acmicpc.net/problem/2018]
 
 
