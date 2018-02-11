@@ -1,31 +1,34 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#define _CRT_SECURE_NO_WARNINGS
 
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
 
-vector<int> ARR;
+int ARR[10001];
 
-bool compare(int i, int j) { return (i < j); }
+int compare(const void *a, const void *b) {
+	if (*(int*)a > *(int*)b)
+		return 1;
+	else if (*(int*)a < *(int*)b)
+		return -1;
+
+	return 0;
+}
 
 int main() {
 
-	int i, j, N, M, QUESTION, ANS;
+	int i, N, M, QUESTION;
 	
-	for (cin>>N, i = 0; i < N; i++) {
-		cin >> M;
-		ARR.push_back(M);
+	for (scanf("%d", &N), i = 0; i < N; i++) {
+		scanf("%d", &ARR[i]);
 	}
 
-	sort(ARR.begin(), ARR.end());
+	qsort(ARR, N, sizeof(int), compare);
 
-	for (cin>>M; M--;) {
-		
-		cin >> QUESTION;
+	for (scanf("%d", &M); M--;) {
 
-		ANS = (binary_search(ARR.begin(), ARR.end(), QUESTION, compare)) ? 1 : 0;
+		scanf("%d", &QUESTION);
 
-		printf("%d\n", ANS);
+		printf("%d\n", (int*)bsearch(&QUESTION, ARR, N, sizeof(int), compare) ? 1 : 0);
 	}
 
 	return 0;
