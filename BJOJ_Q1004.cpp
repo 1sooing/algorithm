@@ -24,7 +24,9 @@ int main() {
 			d1 = pow(cx - x1) + pow(cy - y1);
 			d2 = pow(cx - x2) + pow(cy - y2);
 		
-			if (d1 < pow(r) || d2 < pow(r))
+			if (d1 < pow(r) && d2 > pow(r))
+				ans++;
+			if (d1 > pow(r) && d2 < pow(r))
 				ans++;
 		}
 	}
