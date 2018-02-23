@@ -2,24 +2,25 @@
 
 #include <stdio.h>
 
-int foo(int n, int r)
-{
-	if (n == r) return 1;
-	if (r == 1) return n;
-	return foo(n - 1, r) + foo(n - 1, r - 1);
-}
+long long int in[31][31];
+
 int main()
 {
-	int i, t, m, n;
-	long long int r_a;
+	int t, m, n, i, j, k;
+
+	for (i = 0; i <= 30; i++)
+		in[0][i] = 1;
+
+	for (i = 0; i <= 30; i++)
+		for (j = i + 1; j <= 30; j++)
+			for (k = 0; k<j; k++)
+				in[i + 1][j] += in[i][k];
 
 	scanf("%d", &t);
 
-	for (i = 0; i<t; i++) {
-		scanf("%d%d", &m, &n);
-
-		r_a = foo(n, m);
-
-		printf("%lld\n", r_a);
+	while (t--)
+	{
+		scanf("%d %d", &n, &m);
+		printf("%d\n", in[n][m]);
 	}
 }
