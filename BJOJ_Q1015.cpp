@@ -1,12 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 
 int main()
 {
-	int n;
-	int t;
-	int i, j;
+	int n, t, i, j;
 	int n_comp;
 	int n_comp_order = 0;
 	int n_Rank = 0;
